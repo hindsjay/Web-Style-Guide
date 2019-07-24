@@ -3,16 +3,24 @@
 // **************************************
 
 
+.grid__col--3:first-child {
+  margin-bottom: 20px;
+}
+
 .nav {
-  display: flex;
-  flex-direction: column;
+  text-align: center;
 }
 
 .nav__item {
-  display: block;
-}
-
-.nav__item a {
-  display: block;
-  color: $main-font-color;
+  a {
+    display: block;
+    color: $main-font-color;
+    padding: 15px;
+  }
+  a:active {
+    @include nav-item-action;
+  }
+  a:hover {
+    @include nav-item-action;
+  }
 }
