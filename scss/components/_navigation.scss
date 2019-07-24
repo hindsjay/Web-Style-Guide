@@ -1,0 +1,18 @@
+// **************************************
+// navigation styles
+// **************************************
+
+
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__item {
+  display: block;
+}
+
+.nav__item a {
+  display: block;
+  color: $main-font-color;
+}

@@ -1,9 +1,12 @@
 
+// **************************************
+// base styles
+// **************************************
+
 
 * {
   box-sizing: border-box;
 }
-
 
 /* to remove default list styles, margin, and padding */
 ul {
@@ -12,8 +15,11 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
 
 p {
-  font-size: 1.25em;
-  line-height: 1.6;
+  font-size: 1em;
+  line-height: 1.5;
 }

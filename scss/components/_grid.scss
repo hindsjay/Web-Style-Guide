@@ -7,6 +7,7 @@
 // **********************************************
 
 
+
 // grid base class
 .grid {
 
@@ -15,6 +16,7 @@
     padding: 1em 10px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     // NOTE: replace with media query mixin if aiming for exceeds
     @media (min-width: 768px) {
