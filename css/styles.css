@@ -362,7 +362,6 @@ p {
   padding: 1em 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 @media (min-width: 768px) {
   .grid__row {
@@ -502,18 +501,37 @@ p {
   font-weight: 300;
 }
 
-.nav {
-  display: flex;
-  flex-direction: column;
+.grid__col--3:first-child {
+  margin-bottom: 20px;
 }
 
-.nav__item {
-  display: block;
+.nav {
+  text-align: center;
 }
 
 .nav__item a {
   display: block;
   color: grey;
+  padding: 15px;
+}
+.nav__item a:active {
+  border-radius: 4px;
+  background-color: #61EDB1;
+  color: white;
+}
+.nav__item a:hover {
+  border-radius: 4px;
+  background-color: #61EDB1;
+  color: white;
+}
+
+.img--logo {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.img--frame {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
