@@ -358,6 +358,12 @@ p {
   line-height: 1.5;
 }
 
+.nav__item a:hover, .nav__item a:active {
+  border-radius: 4px;
+  background-color: #61EDB1;
+  color: white;
+}
+
 .grid__row {
   padding: 1em 10px;
   display: flex;
@@ -514,17 +520,6 @@ p {
   color: grey;
   padding: 15px;
 }
-.nav__item a:active {
-  border-radius: 4px;
-  background-color: #61EDB1;
-  color: white;
-}
-.nav__item a:hover {
-  border-radius: 4px;
-  background-color: #61EDB1;
-  color: white;
-}
-
 .img--logo {
   display: block;
   margin: 0 auto;

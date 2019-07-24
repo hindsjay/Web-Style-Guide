@@ -18,9 +18,9 @@
     padding: 15px;
   }
   a:active {
-    @include nav-item-action;
+    @extend %nav-item-action;
   }
   a:hover {
-    @include nav-item-action;
+    @extend %nav-item-action;
   }
 }
