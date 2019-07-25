@@ -2,5 +2,8 @@
 // Mixins
 // **************************************
 
-
+@mixin center-images {
+  display: block;
+  margin: 0 auto;
+}
 
