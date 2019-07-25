@@ -6,5 +6,28 @@
 .container {
   font-family: $primary-font;
   color: $main-font-color;
-  font-weight: 300;
+  @extend %font-weight--light;
+}
+
+.card {
+  h4 {
+    @extend %font-weight--light;
+  }
+  h1 {
+    color: $theme-color-green;
+    padding-left: 20px;
+  }
+}
+
+.link {
+  color: $theme-color-blue;
+  font-weight: $font-weight--reg;
+}
+
+.blockquote {
+  font-style: $font-style-italic;
+  font-size: 1.4em;
+  border-left: 7px solid $theme-color-green;
+  border-radius: 4px;
+  padding-left: 15px; 
 }
