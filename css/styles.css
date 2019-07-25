@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -368,10 +369,6 @@ p {
   font-weight: 300;
 }
 
-.card {
-  margin-bottom: 50px;
-}
-
 .grid__row {
   padding: 1em 10px;
   display: flex;
@@ -557,6 +554,7 @@ p {
 .img--avatar {
   display: block;
   margin: 0 auto;
+  margin-top: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */
