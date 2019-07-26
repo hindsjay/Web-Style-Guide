@@ -12,10 +12,14 @@
 
   &--frame {
     max-width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(128, 128, 128, .2);
+    border-radius: 2px;
   }
 
   &--avatar {
     @include center-images;
     margin-top: 15px;
+    margin-bottom: 20px;
   }
 }

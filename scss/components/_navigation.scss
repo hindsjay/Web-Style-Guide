@@ -16,11 +16,12 @@
     display: block;
     color: $main-font-color;
     padding: 15px;
-  }
-  a:active {
-    @extend %nav-item-action;
-  }
-  a:hover {
-    @extend %nav-item-action;
+
+    &:active {
+      @extend %nav-item-action;
+    }
+    &:hover {
+      @extend %nav-item-action;
+    }
   }
 }
