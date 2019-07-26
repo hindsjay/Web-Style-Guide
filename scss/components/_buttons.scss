@@ -4,7 +4,7 @@
 
 
 // to target login submit button
-.form [type="submit"] {
+.btn--default[type="submit"] {
   font-family: $button-font;
   font-size: .8em;
   font-weight: 500;
