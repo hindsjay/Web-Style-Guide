@@ -21,13 +21,14 @@ $font-style-italic: italic;
 // Colors - Base Descriptors
 
 $white: white;
+$grey: grey;
 $turquoise-blue: #61EDB1; 
 $scooter: rgb(50, 219, 224);
 
 
 // Colors - Usage Variables
 
-$main-font-color: grey;
+$main-font-color: $grey;
 $hover-color: $white;
 
 $theme-color-green: $turquoise-blue;
