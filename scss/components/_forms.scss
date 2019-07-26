@@ -2,3 +2,28 @@
 // form styles
 // **************************************
 
+.form {
+  
+  margin-top: 15px;
+
+  &__label--hidden {
+    display: none;
+  }
+
+  &__input {
+    display: block;
+    outline: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 5px solid $theme-color-green;
+    width: 95%;
+    margin: 0 auto 20px;
+    padding: 10px 0;
+
+    &::placeholder {
+      padding-left: 10px;
+      font-size: .9em;
+    }
+  }
+}
