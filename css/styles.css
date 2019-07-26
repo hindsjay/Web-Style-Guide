@@ -553,6 +553,9 @@ p {
 }
 .img--frame {
   max-width: 100%;
+  padding: 10px;
+  border: 2px solid rgba(128, 128, 128, 0.2);
+  border-radius: 2px;
 }
 .img--avatar {
   display: block;
