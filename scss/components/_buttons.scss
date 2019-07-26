@@ -3,3 +3,17 @@
 // **************************************
 
 
+// to target login submit button
+.form [type="submit"] {
+  font-family: $button-font;
+  font-size: .8em;
+  font-weight: 500;
+  color: $white;
+  background-color: $theme-color-blue;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: .9em;
+  text-transform: uppercase;
+}
+
