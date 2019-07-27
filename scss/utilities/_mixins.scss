@@ -7,3 +7,11 @@
   margin: 0 auto;
 }
 
+@mixin button-styles($button-map) {
+  @each $button, $color in $button-map {
+    &--#{$button} {
+      @extend %buttons;
+      background-color: $color;
+    }
+  }
+}
