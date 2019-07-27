@@ -14,14 +14,17 @@
 
 %buttons {
   font-family: $button-font;
-  font-size: .8em;
-  font-weight: 500;
   color: $white;
-  border: none;
-  border-radius: 5px;
   width: 100%;
   margin-bottom: 1.5em;
-  padding: .9em;
   text-transform: uppercase;
 }
 
+// grid and buttons used similar styling
+%grid-and-buttons {
+  font-size: .8em;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  padding: .9em;
+}

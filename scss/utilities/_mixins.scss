@@ -10,6 +10,7 @@
 @mixin button-styles($button-map) {
   @each $button, $color in $button-map {
     &--#{$button} {
+      @extend %grid-and-buttons;
       @extend %buttons;
       background-color: $color;
     }
