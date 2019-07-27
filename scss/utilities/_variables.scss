@@ -4,10 +4,8 @@
 
 
 //Fonts
-
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
-
 
 $primary-font: 'Lato', sans-serif;
 $button-font: 'Roboto', sans-serif;
@@ -19,7 +17,6 @@ $font-style-italic: italic;
 
 
 // Colors - Base Descriptors
-
 $white: white;
 $grey: grey;
 $turquoise-blue: #61EDB1; 
@@ -27,9 +24,26 @@ $scooter: rgb(50, 219, 224);
 
 
 // Colors - Usage Variables
-
 $main-font-color: $grey;
 $hover-color: $white;
 
 $theme-color-green: $turquoise-blue;
 $theme-color-blue: $scooter;
+
+
+// Button color variables
+$default-color: $theme-color-blue;
+$success-color: #77DD77;
+$error-color: #DD7777;
+$warning-color: rgb(240, 136, 95);
+$info-color: rgb(128, 98, 204);
+
+
+// Theme colors map for Buttons
+$button-theme: (
+  'default'  : $default-color,
+  'success'  : $success-color,
+  'error'    : $error-color,
+  'warning'  : $warning-color,
+  'info'     : $info-color,
+)
