@@ -39,6 +39,20 @@ $warning-color: rgb(240, 136, 95);
 $info-color: rgb(128, 98, 204);
 
 
+// grid color variables
+$col1-color: null;
+$col2-color: null;
+$col3-color: #d4abf5;
+$col4-color: lighten($theme-color-blue, 20%);
+$col5-color: #a0e7a0;
+$col6-color: #43adeb;
+$col7-color: lighten($error-color, 10%);
+$col8-color: lighten(rgb(240, 136, 95), 10%);
+$col9-color: $theme-color-green;
+$col10-color: null;
+$col11-color: null;
+$col12-color: #61EDBB;
+
 // Theme colors map for Buttons
 $button-theme: (
   'default'  : $default-color,
@@ -46,4 +60,21 @@ $button-theme: (
   'error'    : $error-color,
   'warning'  : $warning-color,
   'info'     : $info-color,
+);
+
+
+// Theme colors list for grid colors
+$grid-theme-colors: (
+  $col1-color,
+  $col2-color,
+  $col3-color,
+  $col4-color,
+  $col5-color,
+  $col6-color,
+  $col7-color,
+  $col8-color,
+  $col9-color,
+  $col10-color,
+  $col11-color,
+  $col12-color,
 )
