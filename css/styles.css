@@ -404,7 +404,7 @@ p {
   .grid__row:not(:first-child) {
     flex-direction: row;
   }
-  .grid__row:nth-child(5) {
+  .grid__row:nth-child(5), .grid__row:nth-child(3) {
     flex-direction: column;
   }
   .grid__row:nth-child(7) .grid__col--12 {
@@ -593,11 +593,25 @@ p {
 .nav {
   text-align: center;
 }
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+  }
+  .nav li {
+    margin-left: 15px;
+  }
+}
 
 .nav__item a {
   display: block;
   color: grey;
   padding: 15px;
+}
+@media (min-width: 768px) {
+  .nav__item a {
+    padding: 8px 10px;
+  }
 }
 .img--logo {
   display: block;

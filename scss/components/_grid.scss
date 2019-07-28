@@ -35,7 +35,8 @@
         flex-direction: row;
       } 
 
-      &:nth-child(5) {
+      &:nth-child(5),
+      &:nth-child(3) {
         flex-direction: column;
       }
 
@@ -83,9 +84,6 @@
           flex-basis: #{$i / 12 * 100 + "%"};
 
         }
-
-        
-
       }
     }
   }
