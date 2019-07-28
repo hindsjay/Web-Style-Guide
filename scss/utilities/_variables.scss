@@ -77,4 +77,13 @@ $grid-theme-colors: (
   $col10-color,
   $col11-color,
   $col12-color,
-)
+);
+
+
+// Media query map
+$breakpoints: (
+  'tablet'     : 768px,
+  'desktop'    : 1024px,
+  'desktop-lg' : 1400px,
+);
+
