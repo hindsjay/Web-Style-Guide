@@ -6,8 +6,7 @@
 .img {
 
   &--logo {
-    @include center-images;
-    text-align: center;
+    @include center;
     margin-bottom: 20px;
   }
 
@@ -19,7 +18,7 @@
   }
 
   &--avatar {
-    @include center-images;
+    @include center;
     margin-top: 15px;
     margin-bottom: 20px;
   }
