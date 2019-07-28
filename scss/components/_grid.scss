@@ -21,9 +21,33 @@
     display: flex;
     flex-direction: column;
 
-    // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
-      flex-direction: row;
+    &:first-child {
+      padding-top: 2.3em;
+    }
+
+    // NOTE: replace with media query mixin if aiming for exceeds --> REPLACED W/ MQ
+    @include m-query('tablet') {
+      &:first-child {
+        align-items: center;
+      }
+      
+      &:not(:first-child) {
+        flex-direction: row;
+      } 
+
+      &:nth-child(5) {
+        flex-direction: column;
+      }
+
+      &:nth-child(7) .grid__col--12 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .centered {
+        margin: 0 auto;
+      }
     }
   }
 
@@ -49,15 +73,19 @@
           background-color: nth($grid-theme-colors, $i);
         }
 
-        // NOTE: replace with media query mixin if aiming for exceeds
-        @media (min-width: 768px) {
+        // NOTE: replace with media query mixin if aiming for exceeds --> REPLACED W/ MQ
+        @include m-query('tablet') {
 
           // base stlyes applied to all grid columns
           margin-top: 0;
 
           // make column width a percentage of the column number / total columns
-          flex-basis: #{$i / 12 * 100 + "%"} ;
+          flex-basis: #{$i / 12 * 100 + "%"};
+
         }
+
+        
+
       }
     }
   }
@@ -68,8 +96,8 @@
   // grid__col + grid__col, targets two sibling columns
   & + & {
 
-    // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    // NOTE: replace with media query mixin if aiming for exceeds --> REPLACED W/ MQ
+    @include m-query('tablet') {
 
       // add grid gutter
       margin-left: 10px;
