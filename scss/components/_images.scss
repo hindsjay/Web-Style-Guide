@@ -11,6 +11,7 @@
   }
 
   &--frame {
+    @include center;
     max-width: 100%;
     padding: 10px;
     border: 2px solid rgb(128, 128, 128, .2);
