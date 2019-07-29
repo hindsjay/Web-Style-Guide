@@ -32,14 +32,9 @@
         align-items: center;
       }
       
-      &:not(:first-child) {
+      &:nth-child(1n+7) {
         @include flexin($direction: row);
       } 
-
-      &:nth-child(5),
-      &:nth-child(3) {
-        @include flexin($direction: column);
-      }
 
       &:nth-child(7) .grid__col--12 {
         @include flexin($display: flex, $direction: row, $justify: space-around);

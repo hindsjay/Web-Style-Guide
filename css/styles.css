@@ -405,11 +405,8 @@ p {
   .grid__row:first-child {
     align-items: center;
   }
-  .grid__row:not(:first-child) {
+  .grid__row:nth-child(1n+7) {
     flex-direction: row;
-  }
-  .grid__row:nth-child(5), .grid__row:nth-child(3) {
-    flex-direction: column;
   }
   .grid__row:nth-child(7) .grid__col--12 {
     display: flex;
