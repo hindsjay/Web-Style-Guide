@@ -424,7 +424,6 @@ p {
   .grid__row:first-child {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
   }
   .grid__row:nth-child(5), .grid__row:nth-child(3) {
     flex-direction: row;
