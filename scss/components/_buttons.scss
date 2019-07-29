@@ -5,4 +5,8 @@
 
 .btn {
   @include button-styles($button-theme);
+
+  &--default[type="submit"] {
+    cursor: pointer;
+  }
 }

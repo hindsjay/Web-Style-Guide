@@ -726,5 +726,8 @@ p {
     flex-basis: 15%;
   }
 }
+.btn--default[type=submit] {
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=styles.css.map */
