@@ -33,16 +33,11 @@
 
 
 @mixin m-query($break) {
-  // $value: map-get($breakpoints, $break);
+  $value: map-get($breakpoints, $break);
+  $mobile: map-get($breakpoints, 'mobile');
 
-  @if $break == 'tablet' {
-    @media (min-width: 768px) {
-      @content;
-    }
-  }
-
-  @else if $break == 'desktop' {
-    @media (min-width: 1024px) {
+  @if $value > $mobile {
+    @media (min-width: $value) {
       @content;
     }
   }
