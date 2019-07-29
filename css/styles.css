@@ -423,8 +423,8 @@ p {
 @media (min-width: 1024px) {
   .grid__row:first-child {
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
   }
   .grid__row:nth-child(5), .grid__row:nth-child(3) {
     flex-direction: row;

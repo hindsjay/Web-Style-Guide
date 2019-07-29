@@ -7,8 +7,7 @@
   text-align: center;
 
   @include m-query('tablet') {
-    display: flex;
-    flex-direction: row;
+    @include flexin($display: flex, $direction: row);
     
     & li {
       margin-left: 15px;

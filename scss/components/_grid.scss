@@ -24,8 +24,7 @@
   // .grid__row
   &__row {
     padding: 1em 10px;
-    display: flex;
-    flex-direction: column;
+    @include flexin($display: flex, $direction: column);
 
     // NOTE: replace with media query mixin if aiming for exceeds --> REPLACED W/ MQ
     @include m-query('tablet') {
@@ -34,18 +33,16 @@
       }
       
       &:not(:first-child) {
-        flex-direction: row;
+        @include flexin($direction: row);
       } 
 
       &:nth-child(5),
       &:nth-child(3) {
-        flex-direction: column;
+        @include flexin($direction: column);
       }
 
       &:nth-child(7) .grid__col--12 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        @include flexin($display: flex, $direction: row, $justify: space-around);
       }
 
       & .centered {
@@ -55,14 +52,13 @@
 
     @include m-query('desktop') {
       &:first-child {
-        flex-direction: row;
+        @include flexin($direction: row, $justify: space-between);
         align-items: center;
-        justify-content: space-between;
       }
 
       &:nth-child(5),
       &:nth-child(3) {
-        flex-direction: row;
+        @include flexin($direction: row);
       }
     }
   }
