@@ -8,6 +8,10 @@
   &--logo {
     @include center;
     margin-bottom: 20px;
+
+    @include m-query('desktop') {
+      margin-top: 20px;
+    }
   }
 
   &--frame {
